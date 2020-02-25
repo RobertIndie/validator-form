@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import validateStrategy from './strategys';
+var validateStrategy = require('./strategys');
 
 const _toString = Object.prototype.toString;
 
@@ -94,7 +94,7 @@ function _validateSingleValue(value, strategyArr) {
  *   message: String | Array
  * }
  */
-export function validateValue(values, strategys, isMessageString = true) {
+module.exports =  function validateValue(values, strategys, isMessageString = true) {
   const {
     valueArr,
     strategyArr,

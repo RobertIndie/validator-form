@@ -1,4 +1,4 @@
-import { validateValue } from '../validators';
+var validateValue = require('../validators');
 
 test('case1: 单条正则去校验单个值', () => {
   expect(validateValue('leeper', 'nameSpell')).toEqual({

@@ -6,7 +6,7 @@
  *   }
  * }
  */
-export default {
+module.exports =  {
   // test case
   error1: {
     regexp: '/^[a-z]{1,50}$/',

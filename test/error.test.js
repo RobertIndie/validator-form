@@ -1,4 +1,4 @@
-import { validateValue } from '../validators';
+var validateValue = require('../validators');
 
 test('error1: 第一个参数为必填参数', () => {
   expect(() => {
